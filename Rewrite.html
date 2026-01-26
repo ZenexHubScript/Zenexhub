@@ -5,22 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zenex | A Decent Roblox Script</title>
     <style>
-        /* Sorry for the shitty css. I coded this poorly */
+        /* Sorry for the shitty css. I coded this poorly and used gemini. so sorry for the poorly made code */
         @keyframes hr {
             from {width: 0px;}
             to {width: 50%;}
         }
+        /* 
+        Uhhh Old Animation for hr
+        #hr1 {
+            animation-name: hr;
+            animation-duration 2s;
+        }
+        
+        */
+        * {
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            /* background: linear-gradient(135deg, #000, #1a1a1a);  */
+        }
         nav {
-            background-color: #;
+            background-color: transparent;
+        }
+        
+        /* I used Gemini to align the items so sorry again */
+
+        #nbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 20px;
+            background-color: transparent;
         }
 
         #nbar a {
             color: whitesmoke;
-            transition: text-decoration 0.5s;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        #nbar img {
+            height: 40px;
+            width: auto;
+        }
+
+        #nbar h3 {
+            margin: 0;
+            margin-right: 20px;
         }
 
         #nbar a:hover {
             text-decoration: underline;
+            background-color: whitesmoke;
+            color: #111;
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
         }
 
         
@@ -29,6 +71,7 @@
             text-align: center;
             color: aliceblue;
             font-family: Georgia, 'Times New Roman', Times, serif;
+            /* background-image: url(''); */
         }
 
         #hr1 {
@@ -37,35 +80,114 @@
         }
 
         #credits {
-            background-color: #;
+            background-color: transparent;
         }
 
         h1:hover + #hr1 {
             width: 25%;
         }
+        
+        /* Credits to W3school, I used their code to make the image center */
+        /* #gui { */
+            /* display: block; */
+            /* margin-left: auto; */
+            /* margin-right: auto; */
+            /* width: 50%; */
+            /* background: none; */
+        /* } */
+        #version {
+            font-size: 20px;
+        }
 
+        #copyright {
+            font-family: sans-serif;
+        }
+
+        #features {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        /* Made with Gemini, The one I made looked like shit. so ty Gemini also sorry for using ai. I'm still rusty at frontend explaining why the website is trash rn */
+        #features h3 {
+            width: 40%;
+            background-color: #111;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #333
+        }
+        button {
+            color:white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 15px 50px;
+            border: 1px solid #444;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 30px 0;
+            background: linear-gradient(45deg, #1a1a1a, #333); 
+        }
+        button:hover {
+            transform: scale(1.1);
+            background: white; 
+            color: black;
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.4); 
+        }
+/* Update your existing #gui block */
+#gui {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+    /* New styling */
+    border-radius: 15px;        /* Smooths the sharp corners */
+    transition: all 0.5s ease;  /* Makes the movement smooth and slow */
+    box-shadow: 0 0 0 rgba(0,0,0,0); /* Invisible shadow at start */
+}
+
+/* Add this new block */
+#gui:hover {
+    transform: translateY(-10px) scale(1.02); /* Floats UP and grows slightly */
+    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.1); /* Adds a soft glow underneath */
+}
     </style>
 </head>
 <body>
+    <hr />
     <nav id="nbar">
-        <hr />
+        <img src="https://github.com/ZenexHubScript/Zenexhub/blob/main/Assets/Zhub.png?raw=true" alt="Icon of Zenex Logo" />
+        <h3>Zenex</h3>
         <a href="" target="_blank">Home</a>
         <a href="" target="_blank">Executors</a>
         <a href="" target="_blank">Discord</a>
-        <hr />
+        <a href="" target="_blank">Scripts</a>
     </nav>
+    <hr />
     <h1>Zenex</h1>
-    <hr id="hr1"/>
+    <hr id="hr1" width="0px"/>
     <h3>The Future of Cheating is Here!</h3>
-    <button>Script</button>
+    <h4 id="version">0.0.0</h4>
+    <img src="https://framerusercontent.com/images/FDWUGnhtPYL2D9z0xElZ9O8T5Q.png" alt="A Testing image of Zenex Script for Roblox" width="500px" id="gui" />
+    <a href="https://redstoneguard.xyz/key-system/d53620a9-07e8-4bf9-b9bd-86019143494b" target="_blank"><button>Script</button></a>
+    <h2>Features</h2>
+    <div id="features">
+        <h3>Built for Executors like Solara/Xeno with Low unc</h3>
+        <h3>A Powerful Script for popular Games!</h3>
+    </div>
     <footer id="credits">
+        <hr />
         <p>Credits</p>
         <h3>Zen: Lead Developer and Owner</h3>
-        <h3>Sap: Co-Founder and Staff</h3>
-        <h3>Juju: Contributor</h3>
-        <h3>Finn: Former Owner and Contributor</h3>
+        <h3>Sap: Co-Founder, Staff and Website Creator</h3>
+        <h3>Juju: Contributor/Helped create some scripts for Zenex</h3>
+        <h3>Finn: Former Owner, Contributor and made the old gui design</h3>
         <h3>Testers: Helping Test Zenex :D Thank you!</h3>
+        <h3 id="copyright">&copy; 2025 Zenex. All rights reserved.</h3>
+        <hr />
     </footer>
-
+    <!-- Sorry for the Ads. I'm in Debt :sob: -->
+    <script src="https://cdn.work.ink/js/redirect.js?id=2741" data-url="https://work.ink/direct/2741" data-max="5"></script>
 </body>
 </html>
