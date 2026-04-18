@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenex | Referral Invite</title>
+    <style>
+        @keyframes body2 {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }    
+        html, body {
+        overscroll-behavior: none;
+        background-color: #333;
+        margin: 0;
+        height: 100%;
+        }    
+        body {
+        background: linear-gradient(135deg, #000, #1a1a1a);
+        color: white;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        animation-name: body2;
+        animation-duration: 2.5s;
+        }
+        #whatdoes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        }
+        #whatdoes div {
+        background: linear-gradient(135deg, #000, #1a1a1a);
+        border-radius: 8px;
+        padding: 10px 20px;
+        border-style: solid;
+        border-color: #333;
+        }
+        #usericon {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        }
+        /* Pasted from Zenex.tech because i'm lazy 😭 */
+        button {
+            color:white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 15px 50px;
+            border: 1px solid #444;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 30px 0;
+            background: linear-gradient(45deg, #1a1a1a, #333); 
+        }
+        button:hover {
+            transform: scale(1.1);
+            background: white; 
+            color: black;
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.4); 
+        }
+    </style>
+</head>
+<body>
+    <img alt="User referral account" id="usericon"/>
+    <h1>You are Supporting: <span id="referral"></span> </h1>
+    <a href="" target="_blank"><button>Discord</button></a>
+    <h1>By Joining the Discord from: <span id="referral2"></span>'s invite.</h1>
+    <div id="whatdoes">
+    <div><h1>You earn <span id="earner"></span> money</h1>You are supporting <span id="earner2"></span> by joining the discord</div>
+    <div><h1>Custom Role</h1>You get a Custom role/Cool Role joining from a referral code</div>
+    <div><h1>Help the Zenex Team</h1>We take time providing good updates by you supporting us. It helps us continue and means a lot so thank you ❤</div>
+    </div>
+
+<script>
+    const user = "Bbau";
+    const folder = "user/referral/";
+    const icons = folder + user + ".png";
+    document.getElementById("referral").innerHTML = user;
+    document.getElementById("referral2").innerHTML = user;
+    document.getElementById("earner").innerHTML = user;
+    document.getElementById("earner2").innerHTML = user;
+    document.getElementById("usericon").src = icons;
+</script>
+</body>
+</html>
