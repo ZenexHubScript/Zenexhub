@@ -1,0 +1,147 @@
+        /* Sorry for the shitty css. I coded this poorly and used gemini. so sorry for the poorly made code */
+        @keyframes hr {
+            from {width: 0px;}
+            to {width: 50%;}
+        }
+        /* 
+        Uhhh Old Animation for hr
+        #hr1 {
+            animation-name: hr;
+            animation-duration 2s;
+        }
+        
+        */
+        * {
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            /* background: linear-gradient(135deg, #000, #1a1a1a);  */
+        }
+        nav {
+            background-color: transparent;
+        }
+        
+        /* I used Gemini to align the items so sorry again */
+
+        #nbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 20px;
+            background-color: transparent;
+        }
+
+        #nbar a {
+            color: whitesmoke;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        #nbar img {
+            height: 40px;
+            width: auto;
+        }
+
+        #nbar h3 {
+            margin: 0;
+            margin-right: 20px;
+        }
+
+        #nbar a:hover {
+            text-decoration: underline;
+            background-color: whitesmoke;
+            color: #111;
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        
+        body {
+            background: linear-gradient(135deg, #000, #1a1a1a);
+            text-align: center;
+            color: aliceblue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            /* background-image: url(''); */
+        }
+
+        #hr1 {
+            width: 0;
+            transition: width 0.5s;   
+        }
+
+        #credits {
+            background-color: transparent;
+        }
+
+        h1:hover + #hr1 {
+            width: 25%;
+        }
+        
+        /* Credits to W3school, I used their code to make the image center */
+        /* #gui { */
+            /* display: block; */
+            /* margin-left: auto; */
+            /* margin-right: auto; */
+            /* width: 50%; */
+            /* background: none; */
+        /* } */
+        #version {
+            font-size: 20px;
+        }
+
+        #copyright {
+            font-family: sans-serif;
+        }
+
+        #features {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        /* Made with Gemini, The one I made looked like shit. so ty Gemini also sorry for using ai. I'm still rusty at frontend explaining why the website is trash rn */
+        #features h3 {
+            width: 40%;
+            background-color: #111;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #333
+        }
+        button {
+            color:white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 15px 50px;
+            border: 1px solid #444;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 30px 0;
+            background: linear-gradient(45deg, #1a1a1a, #333); 
+        }
+        button:hover {
+            transform: scale(1.1);
+            background: white; 
+            color: black;
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.4); 
+        }
+/* Update your existing #gui block */
+#gui {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+    /* New styling */
+    border-radius: 15px;        /* Smooths the sharp corners */
+    transition: all 0.5s ease;  /* Makes the movement smooth and slow */
+    box-shadow: 0 0 0 rgba(0,0,0,0); /* Invisible shadow at start */
+}
+
+/* Add this new block */
+#gui:hover {
+    transform: translateY(-10px) scale(1.02); /* Floats UP and grows slightly */
+    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.1); /* Adds a soft glow underneath */
+}
