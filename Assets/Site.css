@@ -76,7 +76,7 @@
             background-color: transparent;
         }
 
-        h1:hover + #hr1 + hr:hover {
+        h1:hover + #hr1 {
             width: 25%;
         }
         
