@@ -127,21 +127,19 @@
             color: black;
             box-shadow: 0 0 25px rgba(255, 255, 255, 0.4); 
         }
-/* Update your existing #gui block */
 #gui {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     
-    /* New styling */
-    border-radius: 15px;        /* Smooths the sharp corners */
-    transition: all 0.5s ease;  /* Makes the movement smooth and slow */
-    box-shadow: 0 0 0 rgba(0,0,0,0); /* Invisible shadow at start */
+    
+    border-radius: 15px;        
+    transition: all 0.5s ease;  
+    box-shadow: 0 0 0 rgba(0,0,0,0); 
 }
 
-/* Add this new block */
 #gui:hover {
-    transform: translateY(-10px) scale(1.02); /* Floats UP and grows slightly */
-    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.1); /* Adds a soft glow underneath */
+    transform: translateY(-10px) scale(1.02); 
+    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.1); 
 }
